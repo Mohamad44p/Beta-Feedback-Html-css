@@ -1,0 +1,70 @@
+@media screen and (max-width: 1024px) {
+  .courses-container {
+    gap: 15px;
+  }
+
+  .course-card {
+    width: calc(100% - 30px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-container, .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links, .auth-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links a, .button-login, .button-signup {
+    width: 100%;
+  }
+
+  .courses-header, .testimonials-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .view-all {
+    order: 2;
+    margin-top: 20px;
+    align-self: flex-end;
+  }
+
+  .courses-section, .testimonials-section {
+    padding: 20px;
+  }
+
+  .testimonial, .benefit-item, .course-card {
+    width: 100%;
+  }
+
+  .testimonial-footer, .benefit-number {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-btn-Read {
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contact-item, .social-icons a {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}
