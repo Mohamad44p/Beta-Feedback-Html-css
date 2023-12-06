@@ -1,70 +1,199 @@
 @media screen and (max-width: 1024px) {
-  .courses-container {
-    gap: 15px;
+  .nav-links {
+      gap: 15px;
   }
 
-  .course-card {
-    width: calc(100% - 30px);
-  }
-}
-@media screen and (max-width: 768px) {
-  .header-container, .nav-content {
-    flex-direction: column;
-    align-items: flex-start;
+  .button-login, .button-signup {
+      padding: 8px 15px;
   }
 
-  .nav-links, .auth-buttons {
-    flex-direction: column;
-    align-items: flex-start;
+  .logo-container img {
+      height: 35px;
+      width: 35px;
   }
 
-  .nav-links a, .button-login, .button-signup {
-    width: 100%;
+  /* Adjust hero section */
+  .hero-section {
+      padding: 40px 15px;
   }
 
-  .courses-header, .testimonials-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .hero-heading {
+      flex-direction: column;
   }
 
-  .view-all {
-    order: 2;
-    margin-top: 20px;
-    align-self: flex-end;
-  }
-
-  .courses-section, .testimonials-section {
-    padding: 20px;
-  }
-
-  .testimonial, .benefit-item, .course-card {
-    width: 100%;
-  }
-
-  .testimonial-footer, .benefit-number {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .left-btn-Read {
-    margin-top: 10px;
-    justify-content: flex-start;
+  .hero-content, .logos-section, .benefits-section .container {
+      max-width: 90%;
   }
 
   .benefits-grid {
-    grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr); 
   }
 
-  .container-footer {
+  .container-pricing {
+    padding: 0 10px;
+}
+
+.pricing-cards {
     flex-direction: column;
-    align-items: center;
+}
+
+.pricing-card {
+    width: auto;
+    padding: 3rem;
+}
+
+.pricing-card h3 {
+    width: auto;
+}
+
+.testimonials-header {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.testimonials-container {
+    flex-direction: column;
+}
+
+.testimonials-container {
+  justify-content: center;
+  gap: 15px;
+}
+
+.testimonial {
+  width: calc(50% - 20px);/
+}
+
+.courses-container {
+  justify-content: center;
+  gap: 15px;
+}
+
+.course-card {
+  width: calc(50% - 20px); 
+}
+}
+
+
+@media screen and (max-width: 768px) {
+  .navigation-bar {
+      padding: 0 10px;
   }
 
-  .footer-contact-item, .social-icons a {
-    justify-content: center;
+  .nav-content {
+      flex-direction: column;
+      align-items: flex-start;
   }
 
-  .footer-bottom {
-    text-align: center;
+  .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 0;
+      margin-top: 10px;
   }
+
+  .nav-links a {
+      width: 100%;
+      text-align: left;
+  }
+
+  .auth-buttons {
+      flex-direction: column;
+      width: 100%;
+      gap: 5px;
+      margin-top: 10px;
+  }
+
+  .button-login, .button-signup {
+      width: 100%;
+      padding: 8px 15px;
+  }
+
+  
+  .hero-section {
+      padding: 30px 10px;
+  }
+
+  .hero-heading {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .hero-content, .logos-section, .benefits-section .container {
+      max-width: 100%;
+  }
+
+  .benefits-grid {
+      grid-template-columns: 1fr; 
+  }
+
+  .logos-section img {
+      max-width: 80px; 
+  }
+
+  .site-footer {
+      padding: 3rem 0;
+  }
+
+  .footer-contact, .footer-nav, .footer-about, .footer-social {
+      width: 100%;
+  }
+
+  .header-container-pricing {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.toggle-buttons {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.pricing-cards {
+    flex-direction: column;
+}
+
+.pricing-card {
+    width: auto;
+    padding: 2rem;
+}
+
+.pricing-card h3 {
+    width: auto;
+}
+
+
+.testimonials-section {
+    padding: 20px;
+}
+
+.testimonials-header {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.testimonials-container {
+    flex-direction: column;
+}
+
+.testimonials-container {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.testimonial {
+  width: calc(100% - 20px); 
+}
+
+
+.courses-container {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.course-card {
+  width: calc(100% - 20px); 
+}
 }
